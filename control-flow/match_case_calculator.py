@@ -18,8 +18,7 @@ match operator:
         else:
             result = num1 / num2
             print("The result is {}.".format(result))
-    case _:  # This is the correction
-        print("Invalid operation.")
+   
     
      
 
