@@ -1,20 +1,20 @@
-task = input("Enter your task:")
+Task = input("Enter your task:")
 Priority = input("Priority (high/medium/low)")
-time_bound = input("is it timebound?(yes/no)")
+timebound = input("Is it time-bound? (yes/no)")
 
 match Priority:
     case "high":
-        if task is time_bound:
+        if Task is timebound.lower() == "yes":
             print("Reminder to consider working on this project ASAP!")
         else :
             print("Consider completing this task  when you have free time.")
     case "medium":
-        if task is time_bound:
-            print("Reminder to consider working on this project ASAP!")
+        if Task is timebound.lower() == "yes":
+            print("Reminder this is a medium priority time bound task complete it soon!")
         else :
             print("Consider completing this task  when you have free time.")
     case "low":
-        if task is time_bound:
-            print("Reminder to consider working on this project ASAP!")
+        if Task is timebound.lower() == "yes":
+            print("Reminder this is a low priority time bound task complete it at your own time!")
         else :
-            print("Consider completing this task  when you have free time.")
+            print(" no rush Consider completing this task  when you have free time.")
