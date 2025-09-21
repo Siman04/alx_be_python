@@ -1,6 +1,6 @@
 Task = input("Enter your task:")
-Priority = input("Priority (high/medium/low)")
-timebound = input("Is it time-bound? (yes/no)")
+Priority = input("Priority (high/medium/low): ")
+timebound = input("Is it time-bound? (yes/no): ")
 
 match Priority:
     case "high":
