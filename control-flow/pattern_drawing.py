@@ -1,8 +1,8 @@
-size = int(input(" Enter the size of the pattern:"))
-if size > 0:
+input = int(input(" Enter the size of the pattern:"))
+if input > 0:
  row = 0 
- while row < size:
-  for column in range(size):
+ while row < input:
+  for column in range(input):
    print("*", end="")
   print()
   row += 1
