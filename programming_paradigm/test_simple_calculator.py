@@ -25,17 +25,11 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(99, 0), 0)
 
     def test_divide(self):
-        # Integer result - Use assertEqual
         self.assertEqual(self.calc.divide(10, 2), 5)
-        
-        # Float result - MUST use assertAlmostEqual for reliable comparison
         self.assertAlmostEqual(self.calc.divide(7, 2), 3.5) 
-        
         self.assertEqual(self.calc.divide(-15, 3), -5)
         self.assertEqual(self.calc.divide(0, 5), 0)
-        
-        # Division by zero edge case
         self.assertIsNone(self.calc.divide(10, 0))
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     unittest.main()
