@@ -9,7 +9,7 @@ def safe_divide(numerator, denominator):
         result = num / den
         # Per the expected output, return the result as a string
         # formatted like a float, e.g., "2.0"
-        return f"Expected Output: result of the division is {result:.2f}"
+        return f"The result of the division is {result:.1f}"
 
     except ValueError:
         return "Expected Output Error: Please enter numeric values only."
