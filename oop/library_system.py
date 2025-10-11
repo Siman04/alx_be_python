@@ -29,13 +29,9 @@ class Library:
 
     def add_book(self, book):
         self.books.append(book)
-        print(f"Added: {book}")
+       
 
     def list_books(self):
         print("Library contains:")
         for book in self.books:
-            print(f"- {book}")
-    
-    
-
- 
+            print(f" - {book}")
